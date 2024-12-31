@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void str_comp(char s1[],char s2[]); //function declarationsvoid
+void str_comp(char s1[],char s2[]); 
 str_concat(char s1[],char s2[]);
 void str_length(char s1[]);
 void main()
@@ -48,8 +48,7 @@ printf("String1 %s is equal to string2 %s\n",s1,s2);
 void str_concat(char s1[50], char s2[50])
 {
 int i,j;
-for(i=0;s1[i]!='\0';i++); // to get the last position of str1 to
-concatenatestr2 from that position.
+for(i=0;s1[i]!='\0';i++); 
 for (j=0;s2[j]!='\0';j++,i++)
 {
 s1[i]=s2[j];
@@ -60,7 +59,6 @@ printf("After concatenation : %s\n ",s1);
 void str_length(char s1[50])
 {
 int i;
-for(i=0;s1[i]!='\0'; i++); // to get the last position of str1, which is its
-length
+for(i=0;s1[i]!='\0'; i++); 
 printf("The length of string %s is %d \n",s1,i);
 }
